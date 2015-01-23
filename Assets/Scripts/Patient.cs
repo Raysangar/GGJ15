@@ -10,7 +10,7 @@ public class Patient : MonoBehaviour {
 	
 	}
 	
-	int heal (ArrayList medicines) {
+	public int heal (ArrayList medicines) {
 		int diseaseHealed = (diseases [0] as GameObject).GetComponent<Disease> ().heal (medicines);
 		if (diseaseHealed > 0) {
 			(diseases [0] as GameObject).SetActive(false);
@@ -19,7 +19,7 @@ public class Patient : MonoBehaviour {
 		return diseaseHealed;
 	}
 
-	bool isHealthy() {
+	public bool isHealthy() {
 		return diseases.Count == 0;
 	}
 }

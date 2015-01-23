@@ -4,11 +4,6 @@ using System.Collections.Generic;
 
 public class Patient : MonoBehaviour {
 	private ArrayList diseases;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
 	
 	public int heal (ArrayList medicines) {
 		int diseaseHealed = (diseases [0] as GameObject).GetComponent<Disease> ().heal (medicines);
@@ -22,4 +17,9 @@ public class Patient : MonoBehaviour {
 	public bool isHealthy() {
 		return diseases.Count == 0;
 	}
+
+    public void setDiseases(ArrayList diseases)
+    {
+        this.diseases = diseases;
+    }
 }

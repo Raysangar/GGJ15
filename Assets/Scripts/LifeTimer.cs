@@ -9,7 +9,9 @@ public class LifeTimer : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		lifeTime -= Time.deltaTime;
+        if (lifeTime <= 0)
+            GameObject.Find("GameController").GetComponent<GameController>().gameOver();
 	}
 }

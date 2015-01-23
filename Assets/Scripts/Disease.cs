@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 public class Disease : MonoBehaviour {
 
-    public ArrayList medicineList;
+    public GameObject[] medicineList;
 
 	// Use this for initialization
 	void Start () {
-        medicineList = new ArrayList();
+
 	}
 
     public int heal(ArrayList medicines)
@@ -16,10 +16,12 @@ public class Disease : MonoBehaviour {
         int works = 0;
         foreach (var medicine in medicines)
         {
-            if (medicineList.Contains(medicine))
-                ++works;
-            else
-                --works;
+            for(int i = 0; i < medicineList.Length; ++i){
+                if (medicineList[i] == medicine)
+                    ++works;
+                else
+                    --works;
+            }
         }
         return works;
     }

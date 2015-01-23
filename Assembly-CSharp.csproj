@@ -46,13 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Camera.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Disease.cs" />
      <Compile Include="Assets\Scripts\DiseaseGenerator.cs" />
      <Compile Include="Assets\Scripts\GUILifeTimeUpdater.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\LifeTimer.cs" />
      <Compile Include="Assets\Scripts\Patient.cs" />
+<<<<<<< HEAD
+     <Compile Include="Assets\Scripts\SelectorController.cs" />
+=======
+     <None Include="Assets\Text\MedicinesAndDiseases.txt" />
+>>>>>>> 30e5664b3a9321a705dfb5c4bff3285a92d447a3
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -1,0 +1,30 @@
+---MEDICINES---
+-Leaves:
+
+-Root:
+
+-RottenCarrot:
+
+-Syrup:
+
+-Toad:
+
+---DISEASES---
+-ArrowInHead:
+"Doc, my head hurts, but I don't know why..."
+-AxeInBack:
+"Doctor, please, I have a terrible backache."
+-ArrowInEye:
+"I feel strange Doctor, and I can't see through my eye."
+-BearTrap:
+
+-BurntArm:
+"You see Doc, I was cooking and..."
+-EyeOut:
+"I forgot to feed my cat, help me Doc."
+-FungusInBack:
+"Something is wrong with my back, it pains and itches."
+-FungusInEye:
+"I can't stop scratching my eyes, help me Doctor, please."
+-Gutted:
+"Please help me Doc, I feel like something is missing around my stomach."

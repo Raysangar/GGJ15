@@ -10,11 +10,6 @@ public class Disease : MonoBehaviour {
 	void Start () {
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     public int heal(ArrayList medicines)
     {

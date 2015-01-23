@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\LifeTimer.cs" />
      <Compile Include="Assets\Scripts\Patient.cs" />
+     <None Include="Assets\Text\MedicinesAndDiseases.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Programas/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

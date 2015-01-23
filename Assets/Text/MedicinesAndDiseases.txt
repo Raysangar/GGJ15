@@ -17,7 +17,7 @@
 -ArrowInEye:
 "I feel strange Doctor, and I can't see through my eye."
 -BearTrap:
-
+"Something is not right, Doc. It itches a bit."
 -BurntArm:
 "You see Doc, I was cooking and..."
 -EyeOut:
@@ -28,3 +28,30 @@
 "I can't stop scratching my eyes, help me Doctor, please."
 -Gutted:
 "Please help me Doc, I feel like something is missing around my stomach."
+
+---GOAT---
+-BaseLine:
+"What do we do now, Doc?"
+-SimpleDisease:
+"It seems simple, Doc."
+"Simple enough."
+-ComplexDisease:
+"This will need a mix of two medicines. You can, Doc."
+"This will need a mix of two medicines. Come on!"
+-Success:
+"Great job, Doc."
+"Yippy ka yey!"
+"The Doc rules."
+-Failure:
+"Another one bites the dust."
+"May God be merciful with his soul..."
+
+---PATIENT---
+-Success:
+"Thank you, Doc!"
+"I feel better, thanks Doc!"
+-Neutral:
+"I don't feel anything, Doctor..."
+"It isn't working, Doc."
+-Failure:
+"Ugh, I feel weird..."

@@ -25,4 +25,5 @@ public class Disease : MonoBehaviour {
         }
         return works;
     }
+
 }

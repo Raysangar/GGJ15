@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewBehaviourScript : MonoBehaviour {
-
+public class LifeTimer : MonoBehaviour {
+	public float lifeTime;
 	// Use this for initialization
 	void Start () {
 	
@@ -10,10 +10,6 @@ public class NewBehaviourScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
-
-	void heal(ArrayList medicines)  {
-		
+		lifeTime -= Time.deltaTime;
 	}
 }

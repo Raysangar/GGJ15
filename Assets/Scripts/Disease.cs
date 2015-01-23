@@ -16,11 +16,6 @@ public class Disease : MonoBehaviour {
 	
 	}
 
-<<<<<<< HEAD
-	void heal(ArrayList medicines)  {
-		
-	}
-=======
     public int heal(ArrayList medicines)
     {
         int works = 0;
@@ -35,5 +30,5 @@ public class Disease : MonoBehaviour {
         }
         return works;
     }
->>>>>>> 89319fd70c317af55a698c73ac2ab9a3b50613f9
+
 }

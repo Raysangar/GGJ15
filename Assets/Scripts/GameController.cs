@@ -2,23 +2,30 @@
 using System.Collections;
 using Assets.Scripts;
 
-public class GameController : MonoBehaviour {
-	public  GameObject patient;
-    private GameObject player;
-    public Transform objectsPosition;
-    public Transform patientPosition;
-    private int level;
-    private GameObject gameOverObject;
 
-	public float lifeTimePenalty;
+public class GameController : MonoBehaviour {
+
+    public  GameObject patient;
+    public Camera mainCamera;
+    public float lifeTimePenalty;
+
+    private GameObject gameOverObject;   
+
+    private int patientNum;
+ 
 	// Use this for initialization
 	void Start () {
-        player = GameObject.FindGameObjectWithTag("Player");
-        level = 1;
+
+        patientNum = 1;
         gameOverObject = GameObject.Find("GameOver");
         gameOverObject.SetActive(false);
         this.nextPatient();
 	}
+
+    int getPatientNum()
+    {
+        return patientNum;
+    }
 
 	public void heal (ArrayList medicines) {
 		int diseaseHealed = patient.GetComponent<Patient> ().heal (medicines);
@@ -33,8 +40,9 @@ public class GameController : MonoBehaviour {
 	}
 
 	private void nextPatient() {
-        player.transform.LookAt(objectsPosition);
-        DiseaseGenerator.setDiseases(patient, level);
+
+        patient.GetComponent<Patient>().createPatient(patientNum);
+
 	}
 
     public void gameOver() {

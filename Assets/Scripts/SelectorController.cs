@@ -12,8 +12,7 @@ public class SelectorController : MonoBehaviour {
 	void Update () {
         if (Input.GetButtonUp("Fire1"))
         {
-            shootRay();
-            
+            shootRay();            
         }
 	}
     

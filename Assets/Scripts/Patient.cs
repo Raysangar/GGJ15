@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Patient : MonoBehaviour {
-<<<<<<< HEAD
+
 	private ArrayList diseaseList;
     private GameObject[] simpleDiseases;
     private GameObject[] complexDiseases;
@@ -15,9 +15,9 @@ public class Patient : MonoBehaviour {
         simpleDiseases = GameObject.FindGameObjectsWithTag("SimpleDisease");
         complexDiseases = GameObject.FindGameObjectsWithTag("ComplexDisease");
 	}
-=======
+
 	private ArrayList diseases;
->>>>>>> 5e028e973a3ea5c7d2e88ea0ea2a4b5d9407d90e
+
 	
 	public int heal (ArrayList medicines) {
         int diseaseHealed = (diseaseList[0] as GameObject).GetComponent<Disease>().heal(medicines);
@@ -32,7 +32,7 @@ public class Patient : MonoBehaviour {
         return diseaseList.Count == 0;
 	}
 
-<<<<<<< HEAD
+
     public void createPatient(int numPatient)
     {
         simpleDiseases = GameObject.FindGameObjectsWithTag("SimpleDisease");
@@ -43,7 +43,7 @@ public class Patient : MonoBehaviour {
             diseaseList.Add(simpleDiseases[Random.Range(0, simpleDiseases.Length)]);
         }
         else if (numPatient >= easyGameSimple && numPatient < easyGameComplex)
-        {            
+        {
             diseaseList.Add(complexDiseases[Random.Range(0, complexDiseases.Length)]);
         }
         else if (numPatient >= easyGameComplex && numPatient < mediumGameSimple2)
@@ -59,7 +59,7 @@ public class Patient : MonoBehaviour {
         }
         else if (numPatient >= mediumGameSimple2 && numPatient < mediumGameSimpleComplex)
         {
-            diseaseList.Add(simpleDiseases[Random.Range(0, simpleDiseases.Length)]);       
+            diseaseList.Add(simpleDiseases[Random.Range(0, simpleDiseases.Length)]);
             diseaseList.Add(complexDiseases[Random.Range(0, complexDiseases.Length)]);
         }
         else if (numPatient >= mediumGameSimpleComplex && numPatient < mediumGameComplex2)
@@ -133,10 +133,11 @@ public class Patient : MonoBehaviour {
 
             diseaseList.Add(complexDiseases[number3]);
         }
-=======
+    }
+
     public void setDiseases(ArrayList diseases)
     {
         this.diseases = diseases;
->>>>>>> 5e028e973a3ea5c7d2e88ea0ea2a4b5d9407d90e
+
     }
 }

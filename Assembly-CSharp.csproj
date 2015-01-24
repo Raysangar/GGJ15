@@ -54,6 +54,14 @@
      <Compile Include="Assets\Scripts\LifeTimer.cs" />
      <Compile Include="Assets\Scripts\Patient.cs" />
      <Compile Include="Assets\Scripts\SelectorController.cs" />
+<<<<<<< HEAD
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Text\MedicinesAndDiseases.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+=======
+>>>>>>> b6a08d46c75e28f76b442c813f773bf52f54bb3d
      <None Include="Assets\Text\GameText.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Programas/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

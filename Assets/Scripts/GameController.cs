@@ -34,6 +34,7 @@ public class GameController : MonoBehaviour {
         else if (diseaseHealed > 0)
         {
             GetComponent<LifeTimer>().lifeTime += diseaseHealed + 1;
+            mainCamera.GetComponent<CameraController>().SuccessRotation();
             if (patient.GetComponent<Patient> ().isHealthy())
                 nextPatient();
         }

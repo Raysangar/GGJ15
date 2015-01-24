@@ -12,6 +12,7 @@ public class Patient : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        diseaseList = new ArrayList();
         simpleDiseases = GameObject.FindGameObjectsWithTag("SimpleDisease");
         complexDiseases = GameObject.FindGameObjectsWithTag("ComplexDisease");
 	}
@@ -135,9 +136,11 @@ public class Patient : MonoBehaviour {
         }
     }
 
-    public void setDiseases(ArrayList diseases)
-    {
-        this.diseases = diseases;
 
+    public string getCurrentDiseaseType()
+    {
+        GameObject disease = (GameObject)diseaseList[0];
+        return disease.tag;
     }
+
 }

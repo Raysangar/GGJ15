@@ -4,20 +4,20 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
     public float speed;
-    public float briefRotationTime;
 
 
     private float oldDirection;
     private bool moving;
-    private bool briefRotation;
-    private bool startCountDown;
-    private float acumTime;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2829b384d680f1ba75b0bf933b11572f498e6212
 	// Use this for initialization
 	void Start () {       
         moving = false;
-        briefRotation = false;
-        startCountDown = false;
+
 	}
 	
 	// Update is called once per frame
@@ -37,16 +37,20 @@ public class CameraController : MonoBehaviour {
             if ((speed < 0 && transform.rotation.eulerAngles.y - oldDirection < -90)
                 || (speed > 0 && transform.rotation.eulerAngles.y - oldDirection > 90))
             {
+<<<<<<< HEAD
                 if (briefRotation)
                 {
                     startCountDown = true;
                     briefRotation = false;
                 }
+=======
+>>>>>>> 2829b384d680f1ba75b0bf933b11572f498e6212
                 moving = false;
             }
             
         }
 
+<<<<<<< HEAD
         if (startCountDown)
         {
             acumTime += Time.deltaTime;
@@ -65,6 +69,13 @@ public class CameraController : MonoBehaviour {
         briefRotation = true;
     }
 
+=======
+
+        
+        
+	}
+
+>>>>>>> 2829b384d680f1ba75b0bf933b11572f498e6212
     public void SuccessRotation()
     {
         oldDirection = transform.rotation.eulerAngles.y;

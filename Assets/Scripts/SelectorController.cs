@@ -2,11 +2,20 @@
 using System.Collections;
 
 public class SelectorController : MonoBehaviour {
-    private ArrayList units;
+    public GameObject patient;
+
+    private ArrayList selectedMedicines;
+    private int maxMedicines;
+
 	// Use this for initialization
 	void Start () {
-        units = new ArrayList();
+        selectedMedicines = new ArrayList();        
 	}
+
+    void Awake()
+    {
+        setMaxMedicines();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,27 +27,49 @@ public class SelectorController : MonoBehaviour {
     
     private void shootRay()
     {
-        Debug.Log("shoot");
+        
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo))
         {
-            if (hitInfo.transform.gameObject.layer.Equals(8))
-                setUnit(hitInfo.transform.gameObject);
-            else
-                setUnit(null);
+            if (hitInfo.transform.gameObject.tag == "Medicine")
+            {
+                if (selectedMedicines.Count < maxMedicines)
+                    selectedMedicines.Add(hitInfo.transform.gameObject);
+
+                Debug.Log("Bucket : ");
+                if (selectedMedicines.Count > 0)
+                {
+                    foreach (var med in selectedMedicines)
+                    {
+                        GameObject g = (GameObject)med;
+                        Debug.Log(g.name + " ");
+                    }
+                }
+            }
+            if (hitInfo.transform.gameObject.tag == "Trash")
+            {
+                selectedMedicines.Clear();
+            }
+            
         }
     }
 
-    private void setUnit(GameObject unit)
-    {
-        foreach (GameObject oldUnit in units)
-            oldUnit.renderer.material.color = Color.white;
-        units = new ArrayList();
+    private void setMedicine(GameObject unit)
+    {        
         if (unit != null)
         {
-            unit.renderer.material.color = Color.blue;
-            units.Add(unit);
+            
         }
+    }
+
+    public void setMaxMedicines()
+    {
+        if (patient.GetComponent<Patient>().getCurrentDiseaseType() == "SimpleDisease")
+        {
+            maxMedicines = 1;
+        }
+        else
+            maxMedicines = 2;
     }
 }

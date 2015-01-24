@@ -48,10 +48,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Disease.cs" />
-     <Compile Include="Assets\Scripts\DiseaseGenerator.cs" />
      <Compile Include="Assets\Scripts\GUILifeTimeUpdater.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\LifeTimer.cs" />
+     <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\Patient.cs" />
      <Compile Include="Assets\Scripts\SelectorController.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
@@ -60,7 +60,11 @@
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\Text\GameText.txt" />
  <Reference Include="UnityEngine.UI">
+<<<<<<< HEAD
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+=======
  <HintPath>C:/Programas/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+>>>>>>> 2829b384d680f1ba75b0bf933b11572f498e6212
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

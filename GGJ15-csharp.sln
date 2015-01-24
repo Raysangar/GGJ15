@@ -17,10 +17,19 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 																						GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
+																				GlobalSection(MonoDevelopProperties) = preSolution
+=======
+<<<<<<< HEAD
+																			GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> 82bcf0336200795e3ece2c875a9dae0945c3fc94
 =======
 															GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> b6a08d46c75e28f76b442c813f773bf52f54bb3d
+>>>>>>> 2829b384d680f1ba75b0bf933b11572f498e6212
 <<<<<<< HEAD
 =======
 =======

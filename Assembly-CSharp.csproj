@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Disease.cs" />
-     <Compile Include="Assets\Scripts\DiseaseGenerator.cs" />
      <Compile Include="Assets\Scripts\GUILifeTimeUpdater.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\LifeTimer.cs" />

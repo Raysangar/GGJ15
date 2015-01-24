@@ -33,11 +33,12 @@
 -BaseLine:
 "What do we do now, Doc?"
 -SimpleDisease:
-"It seems simple, Doc."
-"Simple enough."
+"It seems simple, Doc. One medicine will do."
+"Simple enough. One medicine will do."
 -ComplexDisease:
 "This will need a mix of two medicines. You can, Doc."
 "This will need a mix of two medicines. Come on!"
+"This will need a mix of two medicines. Need help?"
 -Success:
 "Great job, Doc."
 "Yippy ka yey!"
@@ -45,13 +46,13 @@
 -Failure:
 "Another one bites the dust."
 "May God be merciful with his soul..."
-
 ---PATIENT---
 -Success:
 "Thank you, Doc!"
 "I feel better, thanks Doc!"
 -Neutral:
 "I don't feel anything, Doctor..."
-"It isn't working, Doc."
 -Failure:
 "Ugh, I feel weird..."
+"It isn't working, Doc."
+"I don't feel any better, Doctor..."
